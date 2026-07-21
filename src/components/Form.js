@@ -41,9 +41,9 @@ function Form() {
   return (
     <div>
     <form>
-        <label>Name: <br/> <input type='text' value={name} onChange={(e)=>setName(e.target.value)} /></label><br/>{nameError && <p style={{color:'red'}}>{nameError}</p>}
-        <label>Email:<br/><input type='text'value={email} onChange={(e)=>setEmail(e.target.value)} /></label><br/>{emailerror && <p style={{color:'red'}}>{emailerror}</p>}
-        <label>Password:<br/> <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/></label><br/>{passworderror&&<p style={{color:'red'}}>{passworderror}</p>}
+        <label>Name: <br/> <input id='name' type='text' value={name} onChange={(e)=>setName(e.target.value)} /></label><br/>{nameError && <p style={{color:'red'}} className="error-message">{nameError}</p>}
+        <label>Email:<br/><input id='email' type='text'value={email} onChange={(e)=>setEmail(e.target.value)} /></label><br/>{emailerror && <p style={{color:'red'}} className="error-message">{emailerror}</p>}
+        <label>Password:<br/> <input id='password' type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/></label><br/>{passworderror&&<p style={{color:'red'}} className="error-message">{passworderror}</p>}
         <button>Submit</button>
     </form>
     </div>
