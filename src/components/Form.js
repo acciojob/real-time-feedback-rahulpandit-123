@@ -17,7 +17,7 @@ function Form() {
     function validemail(){
         let regex = /^[\w-]+@[a-z]+\.[a-z]{2,3}/
         if(!regex.test(email)){
-            return 'invalid email format'
+            return 'Invalid email format'
         }else{
             return;
         }
